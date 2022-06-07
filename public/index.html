@@ -11,12 +11,18 @@
 
 <body>
     <!-- Insert an empty iframe with attributes -->
-    <iframe src="" id="api-frame" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
+    <div class="container">
+        <div class="iframe-container">
+            <iframe src="" id="api-frame" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>         </div>
+         <div class="controls" id="controls">
+           <pre id="Info"></pre>
+         </div>
+    </div>
     <!-- Initialize the viewer -->
+
     <script type="text/javascript">
     var iframe = document.getElementById( 'api-frame' );
-    var uid = '7w7pAfrCfjovwykkEeRFLGw5SXS';
+    var uid = 'cedc8083eea54c30a8354eab4bccdf06';
 
     // By default, the latest version of the viewer API will be used.
     var client = new Sketchfab( iframe );
@@ -39,6 +45,7 @@
             console.log( 'Viewer error' );
         }
     } );
+    
     </script>
 </body>
 </html>
